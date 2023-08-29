@@ -1,0 +1,26 @@
+.header{
+    
+}
+.message {
+    text-align: center;
+}
+.section-home {
+    display: flex;
+    margin: 20px;
+}
+.section-description {
+    padding: 25px;
+    margin: 10px;
+    
+}
+.img-description{
+    margin:10px;
+    padding: 25px;
+}
+
+
+img {
+    height: 100%;
+    width: 100%;
+    
+}
