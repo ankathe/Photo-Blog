@@ -1,0 +1,80 @@
+@font-face {
+    font-family: titleBlog;
+    src: url(/fonts/Title-blog.ttf);
+}
+@font-face {
+    font-family: fontDescription;
+    src: url(/fonts/AmaticSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: fontItems;
+    src: url(/fonts/DMSerifDisplay-Italic.ttf)
+}
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+
+body{
+    background: #F0E4E5;
+}
+
+.link-title{
+    text-decoration: none;
+    color: #000000;
+}
+
+.message {
+    text-align: center;
+    font-family: 'titleBlog';
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    
+}
+.message-autor{
+    font-family: cursive;
+    font-size: 12px;
+    margin-top: 0px;
+}
+.nav-container{
+    text-align: center;
+    display: flex;
+    background-color: #ffffff;
+    opacity: 0.7;
+    margin: 25px;
+    padding: 15px;
+    justify-content: center;
+}
+.items-menu{
+    text-decoration: none;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-family: 'fontItems';
+    color: #000000;
+}
+/* row */
+.section-paths {
+    margin: 20px;
+    background: #F0E4E5;
+}
+/* colum */
+.paths-container {
+    display: flex; 
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.paths-photos{
+    background: #ffffff;
+    padding: 10px;
+    flex: 10%;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 95%;
+    height: 100%;
+}
