@@ -1,26 +1,76 @@
-.header{
-    
+@font-face {
+    font-family: titleBlog;
+    src: url(fonts/Title-blog.ttf);
 }
+@font-face {
+    font-family: fontDescription;
+    src: url(fonts/AmaticSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: fontItems;
+    src: url(fonts/DMSerifDisplay-Italic.ttf);
+}
+
+body{
+    background: #F0E4E5;
+}
+
+.link-title{
+    text-decoration: none;
+    color: #000000;
+}
+
 .message {
     text-align: center;
+    font-family: 'titleBlog';
+    font-size: 30px;
+    margin-bottom: 0px;
+    
+}
+.message-autor{
+    font-family: cursive;
+    font-size: 12px;
+    margin-top: 0px;
+}
+.nav-container{
+    text-align: center;
+    display: flex;
+    background-color: #ffffff;
+    opacity: 0.7;
+    margin: 25px;
+    padding: 15px;
+    justify-content: center;
+}
+.items-menu{
+    text-decoration: none;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-family: 'fontItems';
+    color: #000000;
 }
 .section-home {
     display: flex;
     margin: 20px;
+    background: #F0E4E5;
 }
 .section-description {
     padding: 25px;
     margin: 10px;
-    
+    box-shadow: 20%;
+    background-color: #ffffff;
+    font-family: 'fontDescription';
+    font-size: 23px;
+    text-align: center;
+    border: #000000;
 }
 .img-description{
     margin:10px;
     padding: 25px;
+    background: #000000;
 }
-
 
 img {
     height: 100%;
     width: 100%;
-    
 }
