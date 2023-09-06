@@ -19,6 +19,7 @@
 
 body{
     background: #F0E4E5;
+    width: 100%;
 }
 
 .link-title{
@@ -31,7 +32,7 @@ body{
     font-family: 'titleBlog';
     font-size: 30px;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 15px;
     
 }
 .message-autor{
@@ -55,26 +56,43 @@ body{
     font-family: 'fontItems';
     color: #000000;
 }
-/* row */
+/* /////////////////////////// */
 .section-paths {
-    margin: 20px;
+    margin: 25px;
     background: #F0E4E5;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
 }
-/* colum */
+
 .paths-container {
+    margin:0;
+    padding: 25px;
+    list-style: none;
     display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #ffffff;
-    padding: 5px;
+    
 }
 
 .paths-photos{
     background: #ffffff;
-    padding: 10px;
-    flex: 10%;
-    flex-wrap: wrap;
+    margin-bottom: 25px;
+    width: 33%;
+    height: 390px;
 }
 
 img {
-    width: 95%;
-    height: 100%;
+    width: 305px;
+    height: 390px;
+}
+
+.photos-info{
+    width: 305px;
+    height: 170px;
+    background-color: #ffffff;
+    opacity: 
+
 }
