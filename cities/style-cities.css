@@ -72,7 +72,7 @@ body{
     justify-content: center;
 }
 
-.photo-path{
+.photo-city{
     background: #ffffff;
     display:flex;
     position: relative;  
@@ -83,7 +83,7 @@ body{
     box-sizing: border-box;
 }
 
-.photo-box {
+.city-box {
     width: 100%;
     height: 100%;
     display: flex;
@@ -97,7 +97,7 @@ body{
     bottom: 0;
 }
 
-.photo-box:hover{
+.city-box:hover{
     transform: scale(1.2);
     opacity: 0.15;
 }
@@ -106,10 +106,9 @@ img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
 
-.info-photo-box{ 
+.info-city-box{ 
     height: 100%;
     width: 100%;
     background: radial-gradient(circle, rgba(233,230,216,1) 22%, rgba(243,222,243,0.7741176470588236) 97%);

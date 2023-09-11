@@ -11,6 +11,10 @@
     font-family: fontItems;
     src: url(fonts/DMSerifDisplay-Italic.ttf);
 }
+@media (max-width: 1100px){
+    .section-home {flex-direction: column !important;}
+    .section-description{font-size: 20px !important;}
+}
 
 body{
     background: #F0E4E5;
@@ -53,24 +57,29 @@ body{
     display: flex;
     margin: 20px;
     background: #F0E4E5;
+    align-items: center;
+    flex-direction: row;
 }
 .section-description {
+    height: 100%;
+    width: 100%;
     padding: 25px;
     margin: 10px;
     box-shadow: 20%;
-    background-color: #ffffff;
     font-family: 'fontDescription';
     font-size: 23px;
     text-align: center;
-    border: #000000;
 }
+
 .img-description{
-    margin:10px;
-    padding: 25px;
-    background: #000000;
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    padding: 5px;
 }
 
 img {
     height: 100%;
     width: 100%;
+    box-shadow:  0 0 5px rgba(0,0,0,0.6);
 }
