@@ -112,7 +112,7 @@ img{
 .info-photo-box{ 
     height: 100%;
     width: 100%;
-    background: radial-gradient(circle, rgba(233,230,216,1) 22%, rgba(243,222,243,0.7741176470588236) 97%);
+    background: radial-gradient(circle at 50% -20.71%, #fffff3 0, #ffffdf 16.67%, #fffeca 33.33%, #f2f2b5 50%, #dce7a1 66.67%, #c6dd91 83.33%, #aed484 100%);
     font-family: 'fontInfo';
     padding: 10px;
     text-align: center;
