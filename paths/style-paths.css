@@ -17,6 +17,15 @@
   src: url(/fonts/AmaticSC-Bold.ttf);
 }
 
+@media (max-width: 600px){
+  .items-menu {
+    font-size: 12px;
+  }
+  .input{
+    width: 150px;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
