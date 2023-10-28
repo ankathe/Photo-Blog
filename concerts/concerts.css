@@ -1,0 +1,138 @@
+@font-face {
+  font-family: titleBlog;
+  src: url(/fonts/Title-blog.ttf);
+}
+@font-face {
+  font-family: fontDescription;
+  src: url(/fonts/AmaticSC-Regular.ttf);
+}
+
+@font-face {
+  font-family: fontItems;
+  src: url(/fonts/DMSerifDisplay-Italic.ttf);
+}
+
+@font-face {
+  font-family: fontInfo;
+  src: url(/fonts/AmaticSC-Bold.ttf);
+}
+
+@media (max-width: 600px) {
+  .items-menu {
+    font-size: 12px;
+  }
+  .input {
+    width: 150px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f0e4e5;
+  width: 100%;
+}
+.link-title {
+  text-decoration: none;
+  color: #000000;
+}
+.message {
+  text-align: center;
+  font-family: "titleBlog";
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+.message-autor {
+  font-family: cursive;
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.nav-container {
+  text-align: center;
+  display: flex;
+  background-color: #ffffff;
+  opacity: 0.7;
+  margin: 25px;
+  padding: 15px;
+  justify-content: center;
+}
+.items-menu {
+  text-decoration: none;
+  margin-left: 6%;
+  margin-right: 6%;
+  font-family: "fontItems";
+  color: #000000;
+}
+
+.photos-container {
+  background: #f0e4e5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 25px;
+  justify-content: center;
+}
+
+.photo-concert {
+  background: #ffffff;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+  width: 330px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+}
+
+.concert-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.concert-box:hover {
+  transform: scale(1.2);
+  opacity: 0.15;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-concert-box {
+  height: 100%;
+  width: 100%;
+  background-color: radial-gradient(
+    circle at 50% -20.71%,
+    #fffff3 0,
+    #ffffdf 16.67%,
+    #fffeca 33.33%,
+    #f2f2b5 50%,
+    #dce7a1 66.67%,
+    #c6dd91 83.33%,
+    #aed484 100%
+  );
+  font-family: "fontInfo";
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
