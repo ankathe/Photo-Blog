@@ -31,48 +31,77 @@
 // dentro de la funcion lo que se va a renderizar textualmente,
 // es decir escribir parrafos, titulos etc dentro de la funcion. ***
 
-const photosContainer = [
+const cards = [
     {
-        photo: '../concert/gallery4/amorphis.jpg',
-        Information: "Amorphis Concert - I took this photo in  a  big festival in germany",
+        photo: '../concerts/gallery4/amorphis.jpg',
+        information: "Amorphis Concert - I took this photo in  a  big festival in germany",
         location: "Wacken, germany",
     },
     {
-        photo: '../concert/gallery4/haggard.jpeg',
-        Information: "Haggard Concert - I took this photo in a big festival in germany",
+        photo: '../concerts/gallery4/haggard.jpeg',
+        information: "Haggard Concert - I took this photo in a big festival in germany",
         location: "Bogota, colombia",
     },
     {
-        photo: '../concert/gallery4/halloween.jpg',
-        Information: "Halloween Concert - I took this photo in a big festival in a contrysite near to bogota",
+        photo: '../concerts/gallery4/halloween.jpg',
+        information: "Helloween Concert - I took this photo in a big festival in a contrysite near to bogota",
         location: "Bogota, colombia",
     },
     {
-        photo: '../concert/gallery4/harry-potter.jpg',
-        Information: "Harry Potter symphony - I took this photo in bogota when i visited movistar arena for first time ",
+        photo: '../concerts/gallery4/harry-potter.jpg',
+        information: "Harry Potter symphony - I took this photo in bogota when i visited movistar arena for first time ",
         location: "Bogota, colombia - Movistar Arena",
     },
     {
-        photo: '../concert/gallery4/iron-maiden.jpg',
-        Information: "Iron Maiden - I took this photo when i saw the best band in the world, dream fullfilled",
+        photo: '../concerts/gallery4/iron-maiden.jpg',
+        information: "Iron Maiden - I took this photo when i saw the best band in the world, dream fullfilled",
         location: "Wacken, germany",
     },
     {
-        photo: '../concert/gallery4/krombakers.jpg',
-        Information: "Krombakers - I took this photo in wacken in the principal stage",
+        photo: '../concerts/gallery4/krombakers.jpg',
+        information: "Krombakers - I took this photo in wacken in the principal stage",
         location: "Wacken, germany",
     },
     {
-        photo: '../concert/gallery4/megadeath.jpeg',
-        Information: "Megadeath - I took this photo when i was waiting for the band to come out ",
+        photo: '../concerts/gallery4/megadeath.jpeg',
+        information: "Megadeath - I took this photo when i was waiting for the band to come out ",
         location: "Wacken, germany",
     },
 ];
 
-const photosContainer = document.getElementById('photos-container');
-const photoBox = document.getElementById('photo-box');
+const photosContainerElem = document.getElementById('photos-container');
 
 
-function crearTargeta(){
+function designTarget(photoObj){
+    const cardDiv = document.createElement('div');
+    const divImg = document.createElement('div');
+    const divInfo = document.createElement('div');
+
+    const img = document.createElement('img');
+    const location = document.createElement('p');
+    const description = document.createElement('p');
+    const like = document.createElement('button');
+
+    img.src = photoObj.photo;
+    location.textContent = photoObj.location;
+    description.textContent = photoObj.information;
+
+    cardDiv.classList.add('photo-concert');
+    divImg.classList.add('concert-box');
+    divInfo.classList.add('info-concert-box');
+    like.classList.add('button-like');
+    location.classList.add('location-style');
+    description.classList.add('description');
+    img.classList.add('img')
     
+    divImg.appendChild(img);
+    cardDiv.appendChild(divImg);
+    cardDiv.appendChild(divInfo);
+    divInfo.appendChild(description);
+    divInfo.appendChild(location);
+    divInfo.appendChild(like);
+    photosContainerElem.appendChild(cardDiv);
+
 }
+
+cards.forEach(designTarget);
