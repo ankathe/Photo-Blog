@@ -72,20 +72,28 @@ const cards = [
 const photosContainerElem = document.getElementById('photos-container');
 
 
-function designTarget(photoObj){
+function designTarget(photoObj, index){
     const cardDiv = document.createElement('div');
     const divImg = document.createElement('div');
     const divInfo = document.createElement('div');
-
+    
     const img = document.createElement('img');
     const location = document.createElement('p');
     const description = document.createElement('p');
     const like = document.createElement('button');
+    const spanBtn = document.createElement('span');
+    const spanIcon = document.createElement('span');
 
     img.src = photoObj.photo;
+    spanIcon.innerHTML ='<i class="fa-regular fa-heart"></i>';
     location.textContent = photoObj.location;
     description.textContent = photoObj.information;
+    spanBtn.innerText = 0 ;
 
+    spanIcon.id = 'icon';
+    spanIcon.classList.add('span-icon');
+    spanBtn.id = 'count-' + index;
+    spanBtn.classList.add('span-btn');
     cardDiv.classList.add('photo-concert');
     divImg.classList.add('concert-box');
     divInfo.classList.add('info-concert-box');
@@ -100,8 +108,37 @@ function designTarget(photoObj){
     divInfo.appendChild(description);
     divInfo.appendChild(location);
     divInfo.appendChild(like);
+    like.appendChild(spanBtn);
+    like.appendChild(spanIcon);
     photosContainerElem.appendChild(cardDiv);
+
+    
+
+like.addEventListener("click", () => {
+    let clicked = true;
+    if(clicked){
+        spanIcon.innerHTML = '<i class="fa-regular fa-heart"></i>';
+        spanBtn.textContent++;
+    }else{
+        spanIcon.innerHTML = '<i class="fa-regular fa-heart"></i>';
+        spanBtn.textContent--;
+    }
+});
 
 }
 
 cards.forEach(designTarget);
+
+// let clicked = true;
+
+// like.addEventListener("click", () => {
+//     if(!clicked){
+//         clicked=true;
+//         spanIcon.innerHTML = '<i class="fa-regular fa-heart"></i>';
+//         spanBtn.textContent++
+//     }else{
+//         clicked=false;
+//         spanIcon.innerHTML = '<i class="fa-regular fa-heart"></i>';
+//         spanBtn.textContent--;
+//     }
+// });

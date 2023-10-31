@@ -273,15 +273,38 @@ font-family: "fontInfo";
 }
 
 .button-like {
-  width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background: #ffffff;
+  width: 50px;
+	height: 35px;
+	border-radius: 10px;
 	cursor: pointer;
   position: absolute;
   right: 10px;
   top: 10px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: none;
 }
+
+.span-icon {
+  color:#f0d2d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 15px;
+}
+
+.span-btn{
+  align-items: center;
+  display: flex;
+  color: #000000;
+  font-size: 15px;
+  justify-content: center;
+}
+
 
 .info-concert-box {
   height: 100%;
@@ -303,7 +326,7 @@ font-family: "fontInfo";
   left: 10px;
 }
 
-/* .container-search {
+.container-search {
   display: flex;
   position: relative;
 }
@@ -337,4 +360,4 @@ font-family: "fontInfo";
 
 .fa-solid {
   font-size: 25px;
-} */ */
+};
