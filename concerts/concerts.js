@@ -129,6 +129,25 @@ like.addEventListener("click", () => {
 
 cards.forEach(designTarget);
 
+var input = document.getElementById('searchingNow');
+function searching (){
+    const photosContainer = document.getElementById('photos-container');
+    
+    var answers = cards.filter(info => info.location.toLowerCase().includes(input.value));
+    answers.forEach(designTarget) 
+}
+
+function viewSearch (search){
+    var showSearch = document.getElementById('photos-container');
+    showSearch.innerHTML = '';
+}
+
+input.addEventListener('keypress', () => {
+    viewSearch()  
+    searching()
+})
+
+
 // let clicked = true;
 
 // like.addEventListener("click", () => {
