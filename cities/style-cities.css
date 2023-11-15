@@ -1,20 +1,20 @@
 @font-face {
   font-family: titleBlog;
-  src: url(/fonts/Title-blog.ttf);
+  src: url(/Photo-Blog/fonts/Title-blog.ttf);
 }
 @font-face {
   font-family: fontDescription;
-  src: url(/fonts/AmaticSC-Regular.ttf);
+  src: url(/Photo-Blog/fonts/AmaticSC-Regular.ttf);
 }
 
 @font-face {
   font-family: fontItems;
-  src: url(/fonts/DMSerifDisplay-Italic.ttf);
+  src: url(/Photo-Blog/fonts/DMSerifDisplay-Italic.ttf);
 }
 
 @font-face {
   font-family: fontInfo;
-  src: url(/fonts/AmaticSC-Bold.ttf);
+  src: url(/Photo-Blog/fonts/AmaticSC-Bold.ttf);
 }
 
 @media (max-width: 600px){
