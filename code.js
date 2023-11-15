@@ -1,5 +1,5 @@
-var imagenInicial = document.getElementById("imagenInicial");
+// var imagenInicial = document.getElementById("imagenInicial");
 
-imagenInicial.addEventListener('click' , () => {
-    imagenInicial.style.transform = "scale(1.2)";
-});
+// imagenInicial.addEventListener('click' , () => {
+//     imagenInicial.style.transform = "scale(1.2)";
+// });
