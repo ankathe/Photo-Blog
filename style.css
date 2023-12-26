@@ -25,7 +25,7 @@
 }
 
 body{
-    background: #F0E4E5;
+    background: #EBB7A7;
 }
 
 .link-title{
@@ -48,18 +48,19 @@ body{
 .nav-container{
     text-align: center;
     display: flex;
-    background-color: #ffffff;
+    background-color: #36738D;
     opacity: 0.7;
     margin: 25px;
     padding: 15px;
     justify-content: center;
+    box-shadow: 1px 1px 34px 53px rgba(54,115,141,0.57);
 }
 .items-menu{
     text-decoration: none;
     margin-left: 6%;
     margin-right: 6%;
     font-family: 'fontItems';
-    color: #000000;
+    color: ;
 }
 .home-name{
     color: #48063a;
