@@ -72,6 +72,10 @@ body {
   color: #000000;
 }
 
+.paths-name{
+  color: #48063a;
+  text-decoration: overline #48063a;
+}
 .photos-container {
   background: #f0e4e5;
   display: flex;

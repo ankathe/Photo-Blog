@@ -61,6 +61,11 @@ body{
     font-family: 'fontItems';
     color: #000000;
 }
+.home-name{
+    color: #48063a;
+    text-decoration: overline #48063a;
+}
+
 .section-home {
     display: flex;
     margin: 20px;

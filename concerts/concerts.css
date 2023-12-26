@@ -216,6 +216,11 @@ body {
   color: #000000;
 }
 
+.concert-name{
+    color: #48063a;
+    text-decoration: overline #48063a;
+}
+
 .photos-container {
   display: flex;
   flex-wrap: wrap;
