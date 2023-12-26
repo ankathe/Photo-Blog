@@ -15,6 +15,14 @@
     .section-home {flex-direction: column !important;}
     .section-description{font-size: 20px !important;}
 }
+@media (max-width: 600px){
+    .items-menu {
+    font-size: 12px;
+    }
+    .input{
+    width: 150px;
+    }
+}
 
 body{
     background: #F0E4E5;
